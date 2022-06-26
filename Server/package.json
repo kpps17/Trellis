@@ -2,9 +2,10 @@
   "name": "trellis",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/kpps17/Trellis#readme",
   "dependencies": {
+    "dotenv": "^16.0.1",
     "express": "^4.18.1"
   }
 }
