@@ -1,4 +1,5 @@
 const express = require("express");
+const aws = require("aws-sdk");
 const {notFoundHandler, errorHandler} = require(`./middleware`);
 
 require('dotenv').config();
@@ -14,7 +15,7 @@ app.get('/', (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log(`Server lisitening on port ${PORT}`);
+    console.log(`Server listening on port ${PORT}`);
 })
 
 app.use(errorHandler);
